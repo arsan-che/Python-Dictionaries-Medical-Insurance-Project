@@ -43,3 +43,19 @@ print(f"Connie's insurance cost is {medical_records['Connie']['Insurance_cost']}
 # Step 8: Remove Vinay from medical records
 medical_records.pop('Vinay')
 print(medical_records)
+
+# Step 9: Print a summary for each individual
+for key, info in medical_records.items():
+  print(f"{key} is a {info['Age']} year old {info['Sex']} {info['Smoker']} with a BMI of {info['BMI']} and insurance cost of {info['Insurance_cost']}")
+
+# Step 10: Define a function to update/add medical records
+def update_medical_records(name, age, sex, bmi, children, smoker_status, insurance_cost):
+    medical_records[name] = {
+        'Age': age,
+        'Sex': sex,
+        'BMI': bmi,
+        'Children': children,
+        'Smoker': smoker_status,
+        'Insurance_cost': insurance_cost
+
+
