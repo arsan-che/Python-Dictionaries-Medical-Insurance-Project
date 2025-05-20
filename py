@@ -58,4 +58,11 @@ def update_medical_records(name, age, sex, bmi, children, smoker_status, insuran
         'Smoker': smoker_status,
         'Insurance_cost': insurance_cost
 
+# Step 11: Add Salma to the records
+update_medical_records('Salma', 35, 'Female', 23.1, 1, 'Non-smoker', 5327.0)
+print(medical_records['Salma'])
 
+# Step 12: Create a separate dictionary for fitness goals
+fitness_goals = {
+  'Lina': {'Goal': 'gain some muscle mass', 'Weekly Exercise Hours': 8},
+  'George': {'Goal': 'Lose weight', 'Weekly Exercise Hours': 10}
