@@ -66,3 +66,8 @@ print(medical_records['Salma'])
 fitness_goals = {
   'Lina': {'Goal': 'gain some muscle mass', 'Weekly Exercise Hours': 8},
   'George': {'Goal': 'Lose weight', 'Weekly Exercise Hours': 10}
+
+
+# Step 13: Print Lina's fitness goal
+print(f"Lina wants to {fitness_goals['Lina']['Goal']} and exercises {fitness_goals['Lina']['Weekly Exercise Hours']} hours per week.")
+
