@@ -21,3 +21,7 @@ ages = [27, 24, 43, 35, 52]
 zipped_ages = zip(names, ages)
 names_to_ages = {key: value for key, value in zipped_ages}
 print(names_to_ages)
+
+# Step 5: Get Marina's age
+marina_age = names_to_ages.get('Marina', None)
+print(f'Marina\'s age is {marina_age}')
