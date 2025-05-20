@@ -35,3 +35,11 @@ medical_records['Connie'] = {"Age": 43, "Sex": "Female", "BMI": 25.3, "Children"
 medical_records['Isaac'] = {"Age": 35, "Sex": "Male", "BMI": 20.6, "Children": 4, "Smoker": "Smoker", "Insurance_cost": 6420.0}
 medical_records['Valentina'] = {"Age": 52, "Sex": "Female", "BMI": 18.7, "Children": 1, "Smoker": "Non-smoker", "Insurance_cost": 6420.0}
 print(medical_records)
+
+
+# Step 7: Print Connie's insurance cost
+print(f"Connie's insurance cost is {medical_records['Connie']['Insurance_cost']} dollars")
+
+# Step 8: Remove Vinay from medical records
+medical_records.pop('Vinay')
+print(medical_records)
